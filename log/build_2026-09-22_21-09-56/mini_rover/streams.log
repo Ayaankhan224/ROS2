@@ -1,0 +1,32 @@
+[1.985s] Invoking command in '/home/yann/Work/ROS2/src/mini_rover': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yann/Work/ROS2/build/mini_rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mini_rover build --build-base /home/yann/Work/ROS2/build/mini_rover/build install --record /home/yann/Work/ROS2/build/mini_rover/install.log --install-scripts $base/lib/mini_rover --single-version-externally-managed install_data
+[2.523s] running egg_info
+[2.546s] writing ../../build/mini_rover/mini_rover.egg-info/PKG-INFO
+[2.547s] writing dependency_links to ../../build/mini_rover/mini_rover.egg-info/dependency_links.txt
+[2.548s] writing entry points to ../../build/mini_rover/mini_rover.egg-info/entry_points.txt
+[2.549s] writing requirements to ../../build/mini_rover/mini_rover.egg-info/requires.txt
+[2.549s] writing top-level names to ../../build/mini_rover/mini_rover.egg-info/top_level.txt
+[2.611s] reading manifest file '../../build/mini_rover/mini_rover.egg-info/SOURCES.txt'
+[2.616s] writing manifest file '../../build/mini_rover/mini_rover.egg-info/SOURCES.txt'
+[2.616s] running build
+[2.616s] running build_py
+[2.616s] copying mini_rover/motion_controller.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[2.617s] copying mini_rover/status_listener.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[2.617s] copying mini_rover/robot_monitor.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[2.617s] copying mini_rover/__init__.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[2.618s] copying mini_rover/py.typed -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[2.618s] running install
+[2.629s] running install_lib
+[2.672s] copying /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover/motion_controller.py -> /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover
+[2.674s] byte-compiling /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/motion_controller.py to motion_controller.cpython-314.pyc
+[2.675s] running install_data
+[2.675s] copying resource/mini_rover -> /home/yann/Work/ROS2/install/mini_rover/share/ament_index/resource_index/packages
+[2.676s] copying package.xml -> /home/yann/Work/ROS2/install/mini_rover/share/mini_rover
+[2.676s] running install_egg_info
+[2.712s] removing '/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info' (and everything under it)
+[2.712s] Copying ../../build/mini_rover/mini_rover.egg-info to /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info
+[2.716s] running install_scripts
+[2.879s] Installing motion_controller script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[2.880s] Installing robot_monitor script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[2.880s] Installing status_listener script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[2.880s] writing list of installed files to '/home/yann/Work/ROS2/build/mini_rover/install.log'
+[2.929s] Invoked command in '/home/yann/Work/ROS2/src/mini_rover' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yann/Work/ROS2/build/mini_rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mini_rover build --build-base /home/yann/Work/ROS2/build/mini_rover/build install --record /home/yann/Work/ROS2/build/mini_rover/install.log --install-scripts $base/lib/mini_rover --single-version-externally-managed install_data
