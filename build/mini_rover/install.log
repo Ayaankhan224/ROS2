@@ -1,6 +1,8 @@
+/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/status_listener.py
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/robot_monitor.py
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/__init__.py
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/py.typed
+/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/__pycache__/status_listener.cpython-314.pyc
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/__pycache__/robot_monitor.cpython-314.pyc
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/__pycache__/__init__.cpython-314.pyc
 /home/yann/Work/ROS2/install/mini_rover/share/ament_index/resource_index/packages/mini_rover
@@ -13,3 +15,4 @@
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info/zip-safe
 /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info/PKG-INFO
 /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover/robot_monitor
+/home/yann/Work/ROS2/install/mini_rover/lib/mini_rover/status_listener

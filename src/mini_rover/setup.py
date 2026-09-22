@@ -25,7 +25,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'robot_monitor = mini_rover.robot_monitor:main'
+            'robot_monitor = mini_rover.robot_monitor:main',
+            'status_listener = mini_rover.status_listener:main',
         ],
     },
 )
