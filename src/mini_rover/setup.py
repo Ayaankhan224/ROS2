@@ -27,7 +27,8 @@ setup(
         'console_scripts': [
             'robot_monitor = mini_rover.robot_monitor:main',
             'status_listener = mini_rover.status_listener:main',
-            'motion_controller = mini_rover.motion_controller:main'
+            'motion_controller = mini_rover.motion_controller:main',
+            'lidar_processor = mini_rover.lidar_processor:main'
         ],
     },
 )

@@ -9,6 +9,7 @@ setup.py
 ../../build/mini_rover/mini_rover.egg-info/top_level.txt
 ../../build/mini_rover/mini_rover.egg-info/zip-safe
 mini_rover/__init__.py
+mini_rover/lidar_processor.py
 mini_rover/motion_controller.py
 mini_rover/py.typed
 mini_rover/robot_monitor.py
