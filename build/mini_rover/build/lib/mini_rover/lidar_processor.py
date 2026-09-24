@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
+import math
 
 class LidarProcessor(Node):
   def __init__(self):
@@ -12,9 +13,17 @@ class LidarProcessor(Node):
     ranges = msg.ranges
 
     front_index = round((0.0 - msg.angle_min) / msg.angle_increment)
-    front_distance = ranges[front_index]
+    front_ranges = ranges[-10:] + ranges[:11]
+    valid_ranges = [r for r in front_ranges if math.isfinite(r)]
+    if valid_ranges:
+      front_distance = min(valid_ranges)
+    else:
+      front_distance = float('inf')
 
-    self.get_logger().info(f'FRONT DISTANCE: {front_distance}')
+    if front_distance <= 0.5:
+      self.get_logger().info("OBSTACLE AHEAD!")
+    else:
+      self.get_logger().info("PATH CLEAR!")
 
 def main(args=None):
   rclpy.init(args=args)
