@@ -8,12 +8,24 @@ class MotionController(Node):
 
     self. publisher = self.create_publisher(TwistStamped, 'cmd_vel', 10)
 
+    self.counter = 0
+
     self.timer = self.create_timer(1.0, self.move_robot)
 
   def move_robot(self):
+    self.counter += 1
     msg = TwistStamped()
-    msg.twist.linear.x = 0.2
-    msg.twist.angular.z = 0.5
+
+    if self.counter <= 4:
+      msg.twist.linear.x = 0.2
+      msg.twist.angular.z = 0.0
+    elif self.counter <=8:
+      msg.twist.linear.x = 0.0
+      msg.twist.angular.z = 0.5
+      msg.twist.linear.y = 0.2
+    elif self.counter <= 12:
+      msg.twist.linear.x = 0.2
+      msg.twist.angular.z = 0.0
 
     self.publisher.publish(msg)
 
