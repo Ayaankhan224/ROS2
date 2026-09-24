@@ -16,15 +16,20 @@ class MotionController(Node):
     self.counter += 1
     msg = TwistStamped()
 
-    if self.counter <= 4:
+    if self.counter <= 8:
       msg.twist.linear.x = 0.2
       msg.twist.angular.z = 0.0
-    elif self.counter <=8:
+
+    elif self.counter <= 13:
       msg.twist.linear.x = 0.0
       msg.twist.angular.z = 0.5
-      msg.twist.linear.y = 0.2
-    elif self.counter <= 12:
+
+    elif self.counter <= 20:
       msg.twist.linear.x = 0.2
+      msg.twist.angular.z = 0.0
+
+    else:
+      msg.twist.linear.x = 0.0
       msg.twist.angular.z = 0.0
 
     self.publisher.publish(msg)
