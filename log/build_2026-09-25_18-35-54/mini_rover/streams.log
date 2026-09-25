@@ -1,0 +1,34 @@
+[0.915s] Invoking command in '/home/yann/Work/ROS2/src/mini_rover': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yann/Work/ROS2/build/mini_rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mini_rover build --build-base /home/yann/Work/ROS2/build/mini_rover/build install --record /home/yann/Work/ROS2/build/mini_rover/install.log --install-scripts $base/lib/mini_rover --single-version-externally-managed install_data
+[1.217s] running egg_info
+[1.235s] writing ../../build/mini_rover/mini_rover.egg-info/PKG-INFO
+[1.236s] writing dependency_links to ../../build/mini_rover/mini_rover.egg-info/dependency_links.txt
+[1.236s] writing entry points to ../../build/mini_rover/mini_rover.egg-info/entry_points.txt
+[1.236s] writing requirements to ../../build/mini_rover/mini_rover.egg-info/requires.txt
+[1.236s] writing top-level names to ../../build/mini_rover/mini_rover.egg-info/top_level.txt
+[1.275s] reading manifest file '../../build/mini_rover/mini_rover.egg-info/SOURCES.txt'
+[1.277s] writing manifest file '../../build/mini_rover/mini_rover.egg-info/SOURCES.txt'
+[1.277s] running build
+[1.277s] running build_py
+[1.277s] copying mini_rover/lidar_processor.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[1.277s] copying mini_rover/motion_controller.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[1.277s] copying mini_rover/__init__.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[1.278s] copying mini_rover/py.typed -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+[1.278s] running install
+[1.284s] running install_lib
+[1.302s] copying /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover/lidar_processor.py -> /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover
+[1.302s] copying /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover/motion_controller.py -> /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover
+[1.303s] byte-compiling /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/lidar_processor.py to lidar_processor.cpython-314.pyc
+[1.304s] byte-compiling /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/motion_controller.py to motion_controller.cpython-314.pyc
+[1.305s] running install_data
+[1.305s] copying resource/mini_rover -> /home/yann/Work/ROS2/install/mini_rover/share/ament_index/resource_index/packages
+[1.305s] copying package.xml -> /home/yann/Work/ROS2/install/mini_rover/share/mini_rover
+[1.305s] running install_egg_info
+[1.324s] removing '/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info' (and everything under it)
+[1.324s] Copying ../../build/mini_rover/mini_rover.egg-info to /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info
+[1.325s] running install_scripts
+[1.432s] Installing lidar_processor script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[1.433s] Installing motion_controller script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[1.433s] Installing robot_monitor script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[1.433s] Installing status_listener script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+[1.434s] writing list of installed files to '/home/yann/Work/ROS2/build/mini_rover/install.log'
+[1.488s] Invoked command in '/home/yann/Work/ROS2/src/mini_rover' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yann/Work/ROS2/build/mini_rover/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mini_rover build --build-base /home/yann/Work/ROS2/build/mini_rover/build install --record /home/yann/Work/ROS2/build/mini_rover/install.log --install-scripts $base/lib/mini_rover --single-version-externally-managed install_data

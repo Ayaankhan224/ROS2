@@ -1,8 +1,8 @@
+import math
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Bool
-import math
 
 class LidarProcessor(Node):
   def __init__(self):
@@ -10,7 +10,7 @@ class LidarProcessor(Node):
 
     self.subscription = self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
 
-    self.obstacel_publisher = self.create_publisher(Bool, '/obstacle_detection', 10)
+    self.obstacle_publisher = self.create_publisher(Bool, '/obstacle_detection', 10)
 
   def scan_callback(self, msg):
     ranges = msg.ranges
@@ -31,8 +31,8 @@ class LidarProcessor(Node):
 
     obstacle_msg = Bool()
     obstacle_msg.data = front_distance < 0.5
-    self.obstacel_publisher.publish(obstacle_msg)
-
+    self.obstacle_publisher.publish(obstacle_msg)
+    
 def main(args=None):
   rclpy.init(args=args)
 

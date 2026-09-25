@@ -1,0 +1,32 @@
+running egg_info
+writing ../../build/mini_rover/mini_rover.egg-info/PKG-INFO
+writing dependency_links to ../../build/mini_rover/mini_rover.egg-info/dependency_links.txt
+writing entry points to ../../build/mini_rover/mini_rover.egg-info/entry_points.txt
+writing requirements to ../../build/mini_rover/mini_rover.egg-info/requires.txt
+writing top-level names to ../../build/mini_rover/mini_rover.egg-info/top_level.txt
+reading manifest file '../../build/mini_rover/mini_rover.egg-info/SOURCES.txt'
+writing manifest file '../../build/mini_rover/mini_rover.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mini_rover/lidar_processor.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+copying mini_rover/motion_controller.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+copying mini_rover/__init__.py -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+copying mini_rover/py.typed -> /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover
+running install
+running install_lib
+copying /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover/lidar_processor.py -> /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover
+copying /home/yann/Work/ROS2/build/mini_rover/build/lib/mini_rover/motion_controller.py -> /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover
+byte-compiling /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/lidar_processor.py to lidar_processor.cpython-314.pyc
+byte-compiling /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover/motion_controller.py to motion_controller.cpython-314.pyc
+running install_data
+copying resource/mini_rover -> /home/yann/Work/ROS2/install/mini_rover/share/ament_index/resource_index/packages
+copying package.xml -> /home/yann/Work/ROS2/install/mini_rover/share/mini_rover
+running install_egg_info
+removing '/home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info' (and everything under it)
+Copying ../../build/mini_rover/mini_rover.egg-info to /home/yann/Work/ROS2/install/mini_rover/lib/python3.14/site-packages/mini_rover-0.0.0-py3.14.egg-info
+running install_scripts
+Installing lidar_processor script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+Installing motion_controller script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+Installing robot_monitor script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+Installing status_listener script to /home/yann/Work/ROS2/install/mini_rover/lib/mini_rover
+writing list of installed files to '/home/yann/Work/ROS2/build/mini_rover/install.log'

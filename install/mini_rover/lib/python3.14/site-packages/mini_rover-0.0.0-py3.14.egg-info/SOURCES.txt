@@ -12,8 +12,6 @@ mini_rover/__init__.py
 mini_rover/lidar_processor.py
 mini_rover/motion_controller.py
 mini_rover/py.typed
-mini_rover/robot_monitor.py
-mini_rover/status_listener.py
 resource/mini_rover
 test/test_copyright.py
 test/test_flake8.py

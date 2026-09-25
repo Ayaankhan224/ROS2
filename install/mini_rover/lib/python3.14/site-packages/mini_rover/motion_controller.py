@@ -1,36 +1,37 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import TwistStamped
+from std_msgs.msg import Bool
 
 class MotionController(Node):
   def __init__(self):
     super().__init__('motion_controller')
 
+    self.obstacle_detected = False
+    self.subscription = self.create_subscription(Bool, 'obstacle_detection', self.obstacle_callback, 10)
     self. publisher = self.create_publisher(TwistStamped, 'cmd_vel', 10)
-
-    self.counter = 0
-
     self.timer = self.create_timer(1.0, self.move_robot)
+    self.turn_count = 0
+
+  def obstacle_callback(self, msg):
+    self.obstacle_detected = msg.data
 
   def move_robot(self):
-    self.counter += 1
     msg = TwistStamped()
 
-    if self.counter <= 8:
-      msg.twist.linear.x = 0.2
-      msg.twist.angular.z = 0.0
-
-    elif self.counter <= 13:
+    if self.obstacle_detected:
       msg.twist.linear.x = 0.0
-      msg.twist.angular.z = 0.5
 
-    elif self.counter <= 20:
-      msg.twist.linear.x = 0.2
-      msg.twist.angular.z = 0.0
+      if self.turn_count < 5:
+        msg.twist.angular.z = 0.5
+      else:
+        msg.twist.angular.z = -0.5
+      self.turn_count += 1
 
     else:
-      msg.twist.linear.x = 0.0
-      msg.twist.angular.z = 0.0
+        msg.twist.linear.x = 0.35
+        msg.twist.angular.z = 0.0
+        self.turn_count = 0
 
     self.publisher.publish(msg)
 
