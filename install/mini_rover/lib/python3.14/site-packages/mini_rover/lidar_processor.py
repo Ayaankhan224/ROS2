@@ -24,15 +24,15 @@ class LidarProcessor(Node):
     else:
       front_distance = float('inf')
 
-    if front_distance < 0.5:
+    if front_distance < 0.6:
       self.get_logger().info("OBSTACLE AHEAD!")
     else:
       self.get_logger().info("PATH CLEAR!")
 
     obstacle_msg = Bool()
-    obstacle_msg.data = front_distance < 0.5
+    obstacle_msg.data = front_distance < 0.6
     self.obstacle_publisher.publish(obstacle_msg)
-    
+
 def main(args=None):
   rclpy.init(args=args)
 

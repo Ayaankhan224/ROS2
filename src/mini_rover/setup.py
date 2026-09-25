@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'mini_rover'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share','mini_rover','launch'),
+            glob('launch/*.py'))
     ],
     package_data={'': ['py.typed']},
     install_requires=['setuptools'],
